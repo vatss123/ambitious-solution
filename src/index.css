@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark-bg text-slate-100 font-sans antialiased overflow-x-hidden selection:bg-brand-500 selection:text-white;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+  }
+  
+  .glass {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10;
+  }
+  
+  .glass-card {
+    @apply bg-dark-card/50 backdrop-blur-md border border-dark-border/50 hover:border-brand-500/50 transition-colors duration-300;
+  }
+}
