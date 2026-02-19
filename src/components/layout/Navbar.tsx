@@ -6,7 +6,7 @@ import { useAppDispatch, useAppSelector } from '../../app/hooks';
 import { toggleMobileMenu, closeMobileMenu } from '../../app/slices/uiSlice';
 import { navigationLinks } from '../../data/navigationData';
 import { cn } from '../../utils/helpers';
-import Button from '../common/Button';
+
 
 const Navbar: React.FC = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -54,9 +54,6 @@ const Navbar: React.FC = () => {
                             {link.name}
                         </Link>
                     ))}
-                    <Button variant="primary" size="sm" to="/contact">
-                        Get Started
-                    </Button>
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -91,11 +88,6 @@ const Navbar: React.FC = () => {
                                     {link.name}
                                 </Link>
                             ))}
-                            <div className="pt-4">
-                                <Button variant="primary" to="/contact" className="w-full">
-                                    Get Started
-                                </Button>
-                            </div>
                         </div>
                     </motion.div>
                 )}

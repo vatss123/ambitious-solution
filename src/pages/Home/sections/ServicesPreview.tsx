@@ -10,18 +10,21 @@ const services = [
         title: 'Web Development',
         description: 'Custom React & TypeScript applications built for performance and scale.',
         icon: 'Code2',
+        slug: 'web-development',
     },
     {
         id: '2',
         title: 'UI/UX Design',
         description: 'Intuitive and engaging user interfaces that drive conversions.',
         icon: 'MousePointer2',
+        slug: 'ui-ux-design',
     },
     {
         id: '3',
         title: 'Digital Strategy',
         description: 'Data-driven insights to position your brand for market leadership.',
         icon: 'Rocket',
+        slug: 'seo',
     },
 ];
 
