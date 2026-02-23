@@ -4,23 +4,23 @@ import Button from '../../../components/common/Button';
 
 const Hero: React.FC = () => {
     return (
-        <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20">
+        <section className="relative overflow-hidden pt-16 pb-24 lg:pt-16 lg:pb-32">
             {/* Background Elements */}
             <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px] animate-blob mix-blend-screen" />
             <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary/20 rounded-full blur-[120px] animate-blob animation-delay-2000 mix-blend-screen" />
 
-            <div className="container-custom relative z-10 items-center justify-center">
-                <div className="text-center max-w-4xl mx-auto">
+            <div className="container-custom relative z-10">
+                <div className="text-center max-w-5xl mx-auto">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
                     >
-                        <span className="inline-block py-1 px-3 rounded-full bg-white/5 border border-white/10 text-primary text-sm font-medium mb-6">
+                        <span className="inline-block py-2 px-6 rounded-full bg-white/5 border border-white/10 text-primary text-lg md:text-xl font-medium tracking-wide mb-6">
                             Welcome to the Future
                         </span>
-                        <h1 className="text-5xl md:text-7xl font-display font-bold text-white mb-8 leading-tight">
-                            Transforming Ideas into <br />
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-tight">
+                            Transforming Ideas into <br className="hidden md:block" />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
                                 Digital Reality
                             </span>
